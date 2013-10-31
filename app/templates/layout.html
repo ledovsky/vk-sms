@@ -12,8 +12,9 @@
     <script src="{{ url_for('static', filename='bower_components/bootstrap/dist/js/bootstrap.js') }}"></script>
 </head>
 <body>
-  {% block content %}
+    {% include "navbar.html" %}
+    {% block content %}
           
-  {% endblock content %}    
+    {% endblock content %}    
 </body>
 </html>
