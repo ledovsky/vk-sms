@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template, request
+from .models import Group
 
 mod = Blueprint('service', __name__, url_prefix='/service')
 
@@ -10,7 +11,7 @@ def dashboard():
 
 @mod.route('/groups')
 def groups():
-    pass
+    return render_template('service/groups.html')
 
 
 @mod.route('/groups/edit/<group_id>')

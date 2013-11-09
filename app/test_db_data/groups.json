@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "vk_id": 11111,
+        "name": "First group",
+        "user_status": "admin"
+    },
+    {
+        "id": 2,
+        "vk_id": 2222,
+        "name": "Second group",
+        "user_status": "admin"
+    }
+]
