@@ -11,7 +11,10 @@ def dashboard():
 
 @mod.route('/groups')
 def groups():
-    return render_template('service/groups.html')
+    active_groups = Group.query.filter_by(active=True).all()
+    non_active_groups = Group.query.filter_by(active=False).all()
+    print '123'
+    return render_template('service/groups.html', non_active_groups=non_active_groups)
 
 
 @mod.route('/groups/edit/<group_id>')

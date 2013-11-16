@@ -1,28 +1,17 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Main Page
+    Отправленные сообщения
 {% endblock %}
 
 {% block content %}
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <h1>Dashboard</h1>
+                <h1>Отправленные сообщения</h1>
             </div>
             <div class="col-md-4">
-                <div class="row">
-                    <h1>Payment</h1>
-                </div>         
-                <div class="row">
-                    <h1>Groups</h1>
-                        <br>
-                        <ul class="list-group">
-                            <li class="list-group-item">Group 1</li>
-                            <li class="list-group-item">Group 2</li>
-                        </ul>
-                        <a href="{{ url_for('service.groups') }}" class="btn btn-info" role="button">Редактировать</a>
-                </div>       
+               {% include "service/sidebar.html" %}    
             </div>
         </div>
     </div>

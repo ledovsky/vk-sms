@@ -32,6 +32,21 @@ def create_test_user():
 
 
 @manager.command
+def create_admin():
+    user = AdminUser()
+    login = raw_input("login: ")
+    repeat = False
+    while repeat:
+        password = raw_input("password: ")
+        password_2 = raw_input("password again: ")
+        repeat = False if password == password_2 else True 
+    user.login = login
+    user.password = password
+    db.session.add(user)
+    db.session.commit()
+
+
+@manager.command
 def create_all():
     db.create_all()
 

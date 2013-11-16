@@ -1,11 +1,24 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Main Page
+    Группы
 {% endblock %}
 
 {% block content %}
     <div class="container">
-        
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Группы</h1>
+                <h3>Активные</h3>
+                <h3>Не активные</h3>
+                {% for group in non_active_groups %}
+                    <p>{{ group.id }}</p>
+                {% endfor %}
+                <input type="checkbox" name="" id="">
+            </div>
+            <div class="col-md-4">
+               {% include "service/sidebar.html" %}    
+            </div>
+        </div>
     </div>
 {% endblock %}

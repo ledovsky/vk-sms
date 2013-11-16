@@ -3,12 +3,28 @@
         "id": 1,
         "vk_id": 11111,
         "name": "First group",
-        "user_status": "admin"
+        "user_status": "admin",
+        "user": "1"
     },
     {
         "id": 2,
-        "vk_id": 2222,
+        "vk_id": 22222,
         "name": "Second group",
-        "user_status": "admin"
+        "user_status": "admin",
+        "user": "1"
+    },
+    {
+        "id": 3,
+        "vk_id": 33333,
+        "name": "Third group",
+        "user_status": "admin",
+        "user": "1"
+    },
+    {
+        "id": 4,
+        "vk_id": 44444,
+        "name": "Fourth group",
+        "user_status": "user",
+        "user": "1"
     }
 ]
